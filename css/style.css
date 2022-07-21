@@ -135,7 +135,7 @@ body {
   background-color: #fafafa;
   background-image: url(../img/solution-vector.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: top;
   position: relative;
   margin-bottom: 100px;
@@ -335,6 +335,13 @@ body {
   text-align: center;
 }
 
+#website-speed {
+  background-image: url(../img/website-speed.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
 #website-speed .speed h1 {
   font-size: 45px;
   line-height: 150%;
@@ -383,10 +390,6 @@ body {
   display: inline-block;
   border: none;
   margin: 0;
-}
-#website-speed .speed-img {
-  background-image: url(../img/website-speed.png);
-  background-size: cover;
 }
 
 #plans {

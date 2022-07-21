@@ -63,7 +63,6 @@ body {
   background-size: auto;
   position: relative;
   margin-top: 34px;
-
   .intro-text {
     h1 {
       width: 560px;
@@ -144,7 +143,7 @@ body {
   background-color: #fafafa;
   background-image: url(../img/solution-vector.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: top;
   position: relative;
   margin-bottom: 100px;
@@ -354,6 +353,11 @@ body {
 }
 // website-speed section
 #website-speed {
+  background-image: url(../img/website-speed.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: auto;
   .speed {
     h1 {
       font-size: 45px;
@@ -407,10 +411,10 @@ body {
       margin: 0;
     }
   }
-  .speed-img {
-    background-image: url(../img/website-speed.png);
-    background-size: cover;
-  }
+  // .speed-img {
+  //   background-image: url(../img/website-speed.png);
+  //   background-size: cover;
+  // }
 }
 
 // plans section
