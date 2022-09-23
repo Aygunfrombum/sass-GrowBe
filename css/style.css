@@ -18,11 +18,40 @@ body {
   position: relative;
 }
 
-#header .item1 a {
-  color: rgb(242, 88, 34);
+.sosial-media, #members .card {
+  display: flex;
+  justify-content: center;
+  margin: 17px 0 50px 0;
 }
+.sosial-media a, #members .card a {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  align-items: center;
+}
+.sosial-media a:not(:last-child), #members .card a:not(:last-child) {
+  margin-right: 10px;
+}
+.sosial-media a:hover, #members .card a:hover {
+  background-color: rgb(242, 88, 34);
+}
+.sosial-media a:hover .icon, #members .card a:hover .icon {
+  color: #fff;
+}
+.sosial-media .icon, #members .card .icon {
+  display: flex;
+  font-size: x-small;
+  color: rgb(136, 136, 136);
+  justify-content: center;
+  align-items: center;
+}
+
 #header li {
   margin-right: 20px;
+}
+#header a:hover {
+  color: rgb(242, 88, 34);
 }
 #header .btn, #header #website-speed .speed .speed-btn2, #website-speed .speed #header .speed-btn2, #header #chooseUs .chooseUs-card-item .chooseUs-btn, #chooseUs .chooseUs-card-item #header .chooseUs-btn, #header #solution .solution-btn, #solution #header .solution-btn, #header #intro .intro-btns .intro-btn1, #intro .intro-btns #header .intro-btn1 {
   margin: 0;
@@ -30,16 +59,31 @@ body {
 }
 
 #intro {
+  width: auto;
   height: auto;
   background-image: url(../img/intro-bg-img.png);
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: auto;
+  background-size: contain;
   position: relative;
   margin-top: 34px;
 }
+#intro .intro-text .polygon2 {
+  position: absolute;
+  top: 20%;
+  left: 1%;
+}
+#intro .intro-text .polygon3 {
+  position: absolute;
+  top: 60%;
+  left: 38%;
+}
+#intro .intro-text .polygon4 {
+  position: absolute;
+  top: 8%;
+  left: 42%;
+}
 #intro .intro-text h1 {
-  width: 560px;
   font-weight: bold;
   font-size: 60px;
   line-height: 70px;
@@ -47,7 +91,6 @@ body {
   padding: 100px 20px 20px 0px;
 }
 #intro .intro-text p {
-  width: 480px;
   height: 48px;
   font-weight: 400;
   font-size: 20px;
@@ -83,26 +126,11 @@ body {
 #intro .intro-btns .video-img {
   margin-right: 15px;
 }
-#intro .polygon4 {
-  position: absolute;
-  top: 50px;
-  left: 600px;
-}
 
-#intro::before {
-  content: url(../img/intro-polygon2.png);
-  position: absolute;
-  top: 130px;
-  left: 5px;
+#brands {
+  width: auto;
+  height: auto;
 }
-
-#intro::after {
-  content: url(../img/intro-polygon3.png);
-  position: absolute;
-  top: 350px;
-  left: 570px;
-}
-
 #brands .brand-logo {
   display: flex;
   flex-wrap: wrap;
@@ -111,6 +139,7 @@ body {
 }
 
 #solution {
+  width: auto;
   height: auto;
   background-color: #fafafa;
   background-image: url(../img/solution-vector.png);
@@ -137,6 +166,9 @@ body {
   margin: 51px 0 124px 0;
 }
 
+#card {
+  width: auto;
+}
 #card .cards-item {
   height: auto;
   border: none;
@@ -174,6 +206,7 @@ body {
 }
 
 #chooseUs {
+  width: auto;
   background-color: #fafafa;
 }
 #chooseUs .chooseUs-title {
@@ -208,6 +241,9 @@ body {
   color: #000000;
   text-align: center;
 }
+#chooseUs .chooseUs-card-item .third-h5 {
+  margin-top: 10px;
+}
 #chooseUs .chooseUs-card-item p {
   font-size: 15px;
   line-height: 150%;
@@ -218,12 +254,15 @@ body {
   margin-top: 22px;
 }
 #chooseUs .chooseUs-card-item .chooseUs-btn {
-  margin: 39px 120px 40px 100px;
+  margin: 40px auto;
 }
 #chooseUs .chooseUs-card-item:hover {
   box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
 }
 
+#SEO {
+  width: auto;
+}
 #SEO .SEO-content {
   margin-top: 50px;
 }
@@ -283,6 +322,7 @@ body {
 }
 
 #stats {
+  width: auto;
   margin-top: 100px;
 }
 #stats .stats {
@@ -310,6 +350,9 @@ body {
   text-align: center;
 }
 
+#website-speed {
+  width: auto;
+}
 #website-speed .speed h1 {
   font-size: 45px;
   line-height: 150%;
@@ -327,11 +370,13 @@ body {
 }
 #website-speed .speed .website-speed-btns {
   display: flex;
+  flex-wrap: wrap;
   justify-content: baseline;
   margin-bottom: 138px;
 }
 #website-speed .speed .website-speed-btns input {
   width: 190px;
+  height: 50px;
   align-items: center;
   padding: 0 20px;
   background-color: #eeeeee;
@@ -358,6 +403,7 @@ body {
 }
 
 #plans {
+  width: auto;
   background-color: #fafafa;
 }
 #plans .plans-title {
@@ -426,6 +472,9 @@ body {
   box-shadow: 15px 25px 70px -5px rgba(0, 0, 0, 0.07);
 }
 
+#members {
+  width: auto;
+}
 #members .members-title {
   text-align: center;
   margin: 86px auto 52px auto;
@@ -471,16 +520,9 @@ body {
   color: #888888;
   text-align: center;
 }
-#members .card .sosial-media {
-  display: flex;
-  justify-content: center;
-  margin: 17px 0 50px 0;
-}
-#members .card .sosial-media img:not(:last-child) {
-  margin-right: 20px;
-}
 
 #clients {
+  width: auto;
   padding: 50px 0;
   margin-top: 90px;
 }
@@ -532,6 +574,7 @@ body {
 }
 
 #news {
+  width: auto;
   margin-bottom: 100px;
 }
 #news .news-title {
@@ -597,6 +640,7 @@ body {
 }
 
 #footer {
+  width: auto;
   background-color: #f3f3f3;
 }
 #footer p {
@@ -630,16 +674,8 @@ body {
 #footer .footnav1 .nav1-item2 span {
   display: block;
 }
-#footer .footnav1 .sosial-media {
-  display: flex;
+#footer .footnav1 .sosial-media, #footer .footnav1 #members .card, #members #footer .footnav1 .card {
   justify-content: flex-start;
-  margin: 15px 0 50px 0;
-}
-#footer .footnav1 .sosial-media img:not(:last-child) {
-  margin-right: 20px;
-}
-#footer .footnav1 .sosial-media img {
-  cursor: pointer;
 }
 #footer .footnav2, #footer .footnav3 {
   margin: 100px 0 30px 0;
@@ -681,5 +717,21 @@ body {
   }
   #intro {
     background-image: none;
+  }
+  #intro .intro-text .polygon3 {
+    position: absolute;
+    top: 65%;
+    left: 75%;
+  }
+  #intro .intro-text .polygon4 {
+    position: absolute;
+    top: 8%;
+    left: 80%;
+  }
+  .stats {
+    flex-direction: column;
+  }
+  .speed-btn2 {
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
